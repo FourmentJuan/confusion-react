@@ -1,74 +1,73 @@
 import React, { Component } from 'react';
-import { Card,CardImg, CardText,CardBody,CardTitle,ListGroup,ListGroupItem} from 'reactstrap';
+import { Card,CardImg, CardText,CardBody,CardTitle,ListGroup} from 'reactstrap';
 
 class DishDetail extends Component{
     
     constructor(props){
 
         super(props);
-
-        this.state ={
-            comments:null
-        }
     }
 
-    renderComments(comment){
-        if(comment==null)
-        {return(<div></div>)}
-        else
-        {
+    componentDidMount(){
+        console.log('Dishdeatail Component componentDidMOunt invoked');
+    }
+
+    componentDidUpdate(){
+        console.log('Dishdetail Component componentDidUpdate invoked');
+    }
+
+    renderDish(dish){
+        return(
+            <div className="col-12 col-md-5 m-1">
+                <Card>
+                    <CardImg top src={dish.image} alt={dish.description}/>
+                    <CardBody>
+                        <CardTitle>{dish.name}</CardTitle>
+                        <CardText>{dish.description}</CardText>
+                    </CardBody>
+                </Card>
+            </div>
+        )
+    }
+
+    renderComments(comments){
+        if(comments!=null)
             return( 
-                <li>
-                    <p>
-                        {comment.comment}
-                        <br></br>
-                        -- {comment.author},  
-                        {comment.date}
-                    </p>
-                </li>
-            );
-        } 
-    }
-
-    render(){
-        if(this.props.selectedDish==null)
-            return(<div></div>);
-        else
-        {
-            const comment = this.props.selectedDish.comments.map((comment)=>{
-                return(
-                    <ul key={comment.id} className="list-unstyled">
-                        {this.renderComments(comment)}
+                <div className="col-12 col-md-5 m-1">
+                    <h4>Comments</h4>
+                    <ul className="list-unstyled">
+                        {comments.map((comment) => {
+                            return(
+                                <li key={comment.id}>
+                                    <p>{comment.comment}</p>
+                                    <p>-- {comment.author},{new Intl.DateTimeFormat('es-UY', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))} </p>
+                                </li>
+                            );
+                        })}
                     </ul>
-                )
-                });
-
-            return(
-                <div className="row">
-                    <div className="col-12 col-md-5 m-1">
-                            <Card>
-                                <CardImg width="100%" src={this.props.selectedDish.image} alt={this.props.selectedDish.image}/>
-                                <CardBody>
-                                <CardTitle>
-                                        {this.props.selectedDish.name}
-                                </CardTitle>
-                                <CardText>
-                                        {this.props.selectedDish.description}
-                                </CardText>
-                            </CardBody>
-                        </Card>
-                    </div>
-                    <div className="col-12 col-md-5 m-1">
-                        <h4>
-                            Comments 
-                        </h4>
-                        <ListGroup>
-                            {comment}
-                        </ListGroup>
-                    </div>
                 </div>
             );
-        }
+        else
+            return(
+                <div></div>
+            );
+    }
+
+
+    render(){
+        if(this.props.dish!=null)
+            return(
+                <div className="container">
+                    <div className="row">
+                        {this.renderDish(this.props.dish)}
+                        {this.renderComments(this.props.dish.comments)}
+                    </div>
+                </div>
+            )
+        else
+            return(
+                <div></div>
+            );
        
     }
 }
