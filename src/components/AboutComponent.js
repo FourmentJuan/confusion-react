@@ -4,15 +4,42 @@ import { Link } from 'react-router-dom';
 
 function About(props) {
 
+    function RenderLeader({leader}){
+        return(
+            <Media tag="li" key={leader.id} className="col-12 mt-5">
+                <Media left>
+                    <Media object src={leader.image} alt={leader.name}/>
+                </Media>
+                <Media body className="ml-5">
+                    <Media heading>
+                        <h4>{leader.name}</h4>
+                    </Media>
+                    <p>{leader.designation}</p>
+                    <br/>
+                    <p>
+                        {leader.description}
+                    </p>
+                </Media>
+            </Media>
+            /*<Media tag="li" key={leader.id} className="col-12 mt-5" >
+              <Media left middle>
+                  <Media object src={leader.image} alt={leader.name} />
+              </Media>
+              <Media body className="ml-5">
+                  <Media heading>{leader.name}</Media>
+                  <p>{leader.designation}</p>
+                  <br/>
+                  <p>{leader.description}</p>
+              </Media>
+          </Media>*/
+        );
+    }
+
     const leaders = props.leaders.map((leader) => {
         return (
-            <p>Leader {leader.name}</p>
+            <RenderLeader leader={leader}></RenderLeader>
         );
     });
-
-    function RenderLeader(leader){
-        
-    }
 
     return(
         <div className="container">
