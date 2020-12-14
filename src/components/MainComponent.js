@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import Home from './HomeComponent';
 import Header from './HeaderComponent.js';
-import Footer from './FooterComponent.js'
+import Footer from './FooterComponent.js';
+import About from './AboutComponent.js';
 import {DISHES} from '../shared/dishes.js';
 import {COMMENTS} from '../shared/comments.js';
 import {LEADERS} from '../shared/leaders.js';
 import {PROMOTIONS} from '../shared/promotions.js';
 import Menu from './MenuComponent.js';
 import Contact from './ContactComponent.js';
-import {Switch, Route, Riderect, Redirect } from 'react-router-dom';
+import {Switch, Route, Redirect } from 'react-router-dom';
 import DishDetail from './DishdetailComponent.js';
 
 
@@ -53,6 +54,7 @@ class Main extends Component {
         <Header/>
         <Switch>
           <Route path="/home" component={HomePage}/>
+          <Route path="/aboutus" component={() => <About leaders={this.state.leaders}/>}/>
           <Route exact path="/menu" component={() => <Menu dishes={this.state.dishes}/>}/>
           <Route path='/menu/:dishId' component={DishWithId} />
           <Route exact path="/contactus" component={Contact}/>
