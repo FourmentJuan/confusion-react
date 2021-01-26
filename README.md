@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# ConfusionRestaurant - React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta es una aplicación con tecnologia React que fue creada gracias al curso de Coursera **Front-End Web Development with React**. 
 
-## Available Scripts
+## Temas que se tocan en el curso
 
-In the project directory, you can run:
+* React Components
+* React Router
+* Single Page Application
+* Controlled Forms y Uncontrolled Forms
+* Introducción a Redux
+* React Redux Form
+* React Actions
+* Redux Thunk
+* Client-Server Communication
+* Fetch
+* React Animations
+* Building and Deployment
 
-### `yarn start`
+Por mas información entre al link
+https://www.coursera.org/learn/front-end-react/home/welcome
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Instalación
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Tener instalado Node, Git y un JSon Server
+2. Ejecutar comando ` json-server --watch db.json -p 3001 -d 2000 `
+2. Instalar las dependencias de Node
+3. Crear un repositorio ejecutar en consola el siguiente comando git clone ` https://github.com/FourmentJuan/confusion-react.git ` 
+4. Ejecutar ` yarn start ` para iniciar la aplicación
 
-### `yarn test`
+# Un vistaso a la aplicación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%201.PNG
 
-### `yarn build`
+https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%202.PNG
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%203.PNG
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%204.PNG
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%205.PNG
 
-### `yarn eject`
+https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%206.PNG
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
