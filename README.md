@@ -1,6 +1,6 @@
 # ConfusionRestaurant - React.js
 
-Esta es una aplicación con tecnologia React que fue creada gracias al curso de Coursera **Front-End Web Development with React**. 
+Esta es una aplicación con tecnología React que fue creada gracias al curso de Coursera **Front-End Web Development with React**. 
 
 ## Temas que se tocan en el curso
 
@@ -24,7 +24,7 @@ https://www.coursera.org/learn/front-end-react/home/welcome
 
 1. Tener instalado Node, Git y un JSon Server
 2. Ejecutar comando ` json-server --watch db.json -p 3001 -d 2000 `
-3. Crear un repositorio ejecutar en consola el siguiente comando git clone ` https://github.com/FourmentJuan/confusion-react.git ` 
+3. Crear un repositorio ejecutar en consola el siguiente comando ` git clone https://github.com/FourmentJuan/confusion-react.git ` 
 4. Ejecutar ` yarn start ` para iniciar la aplicación
 
 # Un vistaso a la aplicación
