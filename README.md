@@ -30,17 +30,17 @@ https://www.coursera.org/learn/front-end-react/home/welcome
 
 # Un vistaso a la aplicación
 
-https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%201.PNG
+![alt text](https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%201.PNG)
 
-https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%202.PNG
+![alt text](https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%202.PNG)
 
-https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%203.PNG
+![alt text](https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%203.PNG)
 
-https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%204.PNG
+![alt text](https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%204.PNG)
 
-https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%205.PNG
+![alt text](https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%205.PNG)
 
-https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%206.PNG
+![alt text](https://github.com/FourmentJuan/confusion-react/blob/master/Imagenes/Imagen%206.PNG)
 
 
 
