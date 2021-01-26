@@ -23,7 +23,8 @@ https://www.coursera.org/learn/front-end-react/home/welcome
 # Instalación
 
 1. Tener instalado Node, Git y un JSon Server
-2. Ejecutar comando ` json-server --watch db.json -p 3001 -d 2000 `
+2. Copiar la carpeta de JSON server 
+2. Ejecutar comando ` json-server --watch db.json -p 3001 -d 2000 ` en el directorio de JSON server
 3. Crear un repositorio ejecutar en consola el siguiente comando ` git clone https://github.com/FourmentJuan/confusion-react.git ` 
 4. Ejecutar ` yarn start ` para iniciar la aplicación
 
